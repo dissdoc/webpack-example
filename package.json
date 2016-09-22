@@ -1,0 +1,25 @@
+{
+  "name": "angular2-tmpl",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "lite": "lite-server",
+    "build-production": "SET \"NODE_ENV=production\" && webpack"
+  },
+  "license": "ISC",
+  "dependencies": {    
+    "webpack": "*"
+  },
+  "devDependencies": {
+    "concurrently": "^2.2.0",
+    "lite-server": "^2.2.2",
+    "babel-loader": "*",
+    "babel-runtime": "*",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "webpack-dev-server": "*",
+    "babel-preset-es2015": "*",
+    "babel-polyfill": "*",
+    "babel-plugin-transform-runtime": "*"
+  }
+}
